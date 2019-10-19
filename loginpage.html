@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Warrant Log Login Page</title>
+</head>
+<body>
+<form>
+  <label for="pswd">Enter your Password :
+  <input type="password" id="pswd">
+  <input type="button" value="Submit" onclick="checkPswd();"
+</form>
+<!--Function to check password - already set password is Admin-->
+<Script type="text/javascript">
+   function checkPswd() {
+     var confirmPassword = "CosmicWarrants2019";
+	 var password = document.getElementByID("pswd")
+	 if (password == confirmPassword) {
+	     window/location="menupage.html";
+		 }
+		 else{
+		    alert("Passwords do not match. - Please try Again")
+		 }
+	}
+</script>
+</body>
+</html>
